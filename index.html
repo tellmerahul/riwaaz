@@ -4,11 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Fit Riwaaz — Coming Soon</title>
-  <meta name="description" content="My Fit Riwaaz — global designer wear rental. Something beautiful is on its way." />
+  <meta name="description" content="My Fit Riwaaz is a global designer wear rental platform. Rent sherwanis, sarees, lehengas and formal wear for weddings and special occasions — coming soon." />
+  <meta name="keywords" content="My Fit Riwaaz, Riwaaz, cloth rental, designer wear rental, ethnic wear, sherwani, saree, lehenga, wedding outfit rental" />
+  <meta name="author" content="My Fit Riwaaz" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#561530" />
+  <link rel="canonical" href="https://tellmerahul.github.io/riwaaz/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="My Fit Riwaaz" />
+  <meta property="og:title" content="My Fit Riwaaz — Coming Soon" />
+  <meta property="og:description" content="Global designer wear rental. Rent the moment — not the outfit. Something beautiful is on its way." />
+  <meta property="og:url" content="https://tellmerahul.github.io/riwaaz/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://tellmerahul.github.io/riwaaz/logo-new.png" />
+  <meta property="og:image:secure_url" content="https://tellmerahul.github.io/riwaaz/logo-new.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="531" />
+  <meta property="og:image:height" content="470" />
+  <meta property="og:image:alt" content="My Fit Riwaaz logo" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="My Fit Riwaaz — Coming Soon" />
+  <meta name="twitter:description" content="Global designer wear rental. Rent the moment — not the outfit. Something beautiful is on its way." />
+  <meta name="twitter:image" content="https://tellmerahul.github.io/riwaaz/logo-new.png" />
+  <meta name="twitter:image:alt" content="My Fit Riwaaz logo" />
+
+  <link rel="icon" href="logo-new.png" type="image/png" />
+  <link rel="apple-touch-icon" href="logo-new.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="coming-soon.css" />
+  <style>
+    .coming-soon__headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.75rem, 8vw, 4.25rem);
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: 0.01em;
+      margin-bottom: 18px;
+      color: #ffffff;
+    }
+    .coming-soon__headline em {
+      font-style: italic;
+      color: #f5ad18;
+      font-weight: 500;
+    }
+    .coming-soon__divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin: 0 auto 28px;
+      width: min(220px, 60vw);
+    }
+    .coming-soon__divider::before,
+    .coming-soon__divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(245, 173, 24, 0.45);
+    }
+    .coming-soon__divider span {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #f5ad18;
+      flex-shrink: 0;
+    }
+    .coming-soon__tagline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+      font-weight: 500;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      color: rgba(255, 255, 255, 0.88);
+      margin-bottom: 18px;
+    }
+    .coming-soon__tagline em {
+      font-style: italic;
+      color: #f5ad18;
+    }
+  </style>
 </head>
 <body>
   <div class="coming-soon">
@@ -18,11 +98,11 @@
     <main class="coming-soon__content">
       <img src="logo-new.png" alt="My Fit Riwaaz" class="coming-soon__logo" width="280" height="auto" />
 
-      <p class="coming-soon__eyebrow">Global Cloth Rental</p>
-      <h1 class="coming-soon__title">Something <em>beautiful</em><br />is on its way.</h1>
+      <h1 class="coming-soon__headline">Coming <em>Soon</em></h1>
+      <div class="coming-soon__divider" aria-hidden="true"><span></span></div>
+      <p class="coming-soon__tagline">Something <em>beautiful</em> is on its way.</p>
       <p class="coming-soon__desc">
-        Designer ethnic &amp; contemporary wear — rented for the moment, not bought for the closet.
-        We&rsquo;re stitching the final details.
+        Style Is Personal. We are building something that helps you discover yours.
       </p>
 
       <form class="coming-soon__form" id="notify-form">
