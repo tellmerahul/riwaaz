@@ -172,6 +172,19 @@ body {
   margin-bottom: 8px;
 }
 
+.coming-soon__form-error {
+  font-size: 0.85rem;
+  color: #ff8a8a;
+  margin-bottom: 8px;
+}
+
+.coming-soon__form button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 .coming-soon__social {
   margin-top: 32px;
   font-size: 0.82rem;
