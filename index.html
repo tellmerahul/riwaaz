@@ -39,14 +39,26 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="coming-soon.css" />
   <style>
+    .coming-soon__content {
+      max-width: 720px;
+    }
+    .coming-soon__headline-wrap {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0 12px;
+      margin-bottom: 18px;
+    }
     .coming-soon__headline {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(2.75rem, 8vw, 4.25rem);
+      font-size: clamp(1.15rem, 3.5vw, 2.5rem);
       font-weight: 500;
-      line-height: 1.08;
+      line-height: 1.15;
       letter-spacing: 0.01em;
-      margin-bottom: 18px;
+      margin: 0;
       color: #ffffff;
+      white-space: nowrap;
+      text-align: center;
     }
     .coming-soon__headline em {
       font-style: italic;
@@ -75,18 +87,17 @@
       background: #f5ad18;
       flex-shrink: 0;
     }
-    .coming-soon__tagline {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(1.35rem, 3.5vw, 1.75rem);
-      font-weight: 500;
-      line-height: 1.35;
-      letter-spacing: -0.01em;
-      color: rgba(255, 255, 255, 0.88);
-      margin-bottom: 18px;
+    .coming-soon__desc-line {
+      white-space: nowrap;
+      font-size: clamp(0.8rem, 2.4vw, 1rem);
+      margin-bottom: 10px;
     }
-    .coming-soon__tagline em {
-      font-style: italic;
-      color: #f5ad18;
+    .coming-soon__soon {
+      font-size: calc(1rem + 2px);
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -98,12 +109,13 @@
     <main class="coming-soon__content">
       <img src="logo-new.png" alt="My Fit Riwaaz" class="coming-soon__logo" width="280" height="auto" />
 
-      <h1 class="coming-soon__headline">Coming <em>Soon</em></h1>
+      <div class="coming-soon__headline-wrap">
+        <h1 class="coming-soon__headline">Something <em>beautiful</em> is on its way.</h1>
+      </div>
       <div class="coming-soon__divider" aria-hidden="true"><span></span></div>
-      <p class="coming-soon__tagline">Something <em>beautiful</em> is on its way.</p>
-      <p class="coming-soon__desc">
-        Style Is Personal.<br> We are building something that helps you discover yours. <br> Coming Soon.
-      </p>
+      <p class="coming-soon__desc">Style Is Personal.</p>
+      <p class="coming-soon__desc coming-soon__desc-line">We are building something that helps you discover yours.</p>
+      <p class="coming-soon__soon">Coming Soon</p>
 
       <form class="coming-soon__form" id="notify-form">
         <label for="email" class="visually-hidden">Email address</label>
