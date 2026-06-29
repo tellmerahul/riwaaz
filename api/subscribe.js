@@ -28,7 +28,7 @@ module.exports = async (req, res) => {
     return res.status(405).json({ ok: false, error: 'Method not allowed' });
   }
 
-  const scriptUrl = process.env.GOOGLE_SHEET_SCRIPT_URL;
+  const scriptUrl = (process.env.GOOGLE_SHEET_SCRIPT_URL || '').trim();
   if (!scriptUrl) {
     return res.status(500).json({
       ok: false,
